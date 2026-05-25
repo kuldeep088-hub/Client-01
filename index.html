@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLP Nidhi Limited - Secure Your Future | Trusted Nidhi Company</title>
+    <meta name="description" content="FLP Nidhi Limited - RBI registered Nidhi Company offering secure deposit schemes with guaranteed returns. Fixed Deposits, Recurring Deposits with attractive interest rates up to 12.50%.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary: #0a1628;
+            --primary-light: #1a2d4a;
+            --secondary: #2563eb;
+            --secondary-dark: #1d4ed8;
+            --accent: #f59e0b;
+            --accent-light: #fbbf24;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --gradient-primary: linear-gradient(135deg, #0a1628 0%, #1a2d4a 100%);
+            --gradient-secondary: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 70px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 0.6rem 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .trust-item i { color: var(--accent); }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0.75rem 1rem;
+        }
+        .header-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            background: var(--gradient-secondary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .logo-subtitle {
+            font-size: 0.65rem;
+            color: var(--secondary);
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 0.65rem 1.25rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-btn:hover {
+            background: var(--secondary-dark);
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-primary);
+            padding: 2.5rem 1rem 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.05'%3E%3Cpath d='M50 50c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10c0 5.52-4.48 10-10 10s-10-4.48-10-10 4.48-10 10-10zM10 10c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10c0 5.52-4.48 10-10 10S0 25.52 0 20s4.48-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(37, 99, 235, 0.15);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(37, 99, 235, 0.3);
+        }
+        .hero-badge i { color: var(--accent); }
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+        .hero h1 span { color: var(--accent); display: block; }
+        .hero-description {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+        .btn-hero {
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-align: center;
+        }
+        .btn-hero-primary {
+            background: var(--secondary);
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+        }
+        .btn-hero-primary:hover {
+            background: var(--secondary-dark);
+            transform: translateY(-2px);
+        }
+        .btn-hero-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--accent);
+        }
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .stat-label {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Enquiry Form */
+        .enquiry-form {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            box-shadow: var(--shadow-lg);
+        }
+        .enquiry-form h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group.full { grid-column: span 2; }
+        .form-group label {
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group select {
+            padding: 0.75rem;
+            border: 1px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+        .form-submit {
+            width: 100%;
+            padding: 0.9rem;
+            background: var(--secondary);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 0.5rem;
+        }
+        .form-submit:hover {
+            background: var(--secondary-dark);
+            transform: translateY(-1px);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 3rem 1rem;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--secondary);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        .section-header h2 {
+            font-size: 1.75rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .section-header h2 span { color: var(--secondary); }
+        .section-header p {
+            font-size: 0.95rem;
+            color: var(--gray-500);
+        }
+
+        /* Trust Badges Section */
+        .trust-section {
+            background: var(--gray-50);
+        }
+        .trust-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .trust-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+        }
+        .trust-icon {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 1.5rem;
+        }
+        .trust-card h4 {
+            font-size: 0.95rem;
+            color: var(--primary);
+            margin-bottom: 0.2rem;
+        }
+        .trust-card p {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: var(--primary);
+            position: relative;
+        }
+        .how-it-works::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.03'%3E%3Cpath d='M30 30c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10c0 5.52-4.48 10-10 10s-10-4.48-10-10 4.48-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .how-it-works .section-header h2 { color: var(--white); }
+        .how-it-works .section-header p { color: rgba(255, 255, 255, 0.7); }
+        .how-it-works .section-badge {
+            background: rgba(37, 99, 235, 0.2);
+        }
+        .steps-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        .step-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+        .step-card h4 {
+            color: var(--white);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .step-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Plans Section */
+        .plans-section { background: var(--gray-50); }
+        .plans-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+        .plan-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s;
+            border: 1px solid var(--gray-100);
+            position: relative;
+            overflow: hidden;
+        }
+        .plan-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: var(--gradient-secondary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+        .plan-card:hover::before { transform: scaleX(1); }
+        .plan-card.active { border-color: var(--secondary); }
+        .plan-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .plan-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 1.4rem;
+        }
+        .plan-rate { text-align: right; }
+        .plan-rate-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .plan-rate-label {
+            font-size: 0.7rem;
+            color: var(--gray-400);
+            text-transform: uppercase;
+        }
+        .plan-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .plan-type {
+            font-size: 0.75rem;
+            color: var(--white);
+            background: var(--secondary);
+            padding: 0.3rem 0.75rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        .plan-tenures {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        .tenure-badge {
+            background: var(--gray-100);
+            color: var(--gray-700);
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .plan-features {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+        .plan-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--gray-700);
+            border-bottom: 1px solid var(--gray-100);
+        }
+        .plan-features li:last-child { border-bottom: none; }
+        .plan-features li i { color: var(--secondary); font-size: 0.9rem; }
+        .plan-minimum {
+            background: var(--gray-50);
+            padding: 0.85rem;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .plan-minimum-label { font-size: 0.8rem; color: var(--gray-500); }
+        .plan-minimum-value {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            background: var(--gray-50);
+        }
+        .testimonials-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+        }
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .testimonial-info h4 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 0.2rem;
+        }
+        .testimonial-info p {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+        .testimonial-stars {
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+        }
+        .testimonial-text {
+            font-size: 0.95rem;
+            color: var(--gray-700);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* FAQ Section */
+        .faq-section { background: var(--white); }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: var(--gray-50);
+            border-radius: 12px;
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+            border: 1px solid var(--gray-100);
+        }
+        .faq-question {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: inherit;
+        }
+        .faq-question i {
+            transition: transform 0.3s;
+            color: var(--secondary);
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 0 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+        .faq-item.active .faq-answer {
+            padding: 0 1.25rem 1rem;
+            max-height: 500px;
+        }
+        .faq-answer p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* Interest Rates Table */
+        .rates-section { background: var(--primary); }
+        .rates-section .section-header h2 { color: var(--white); }
+        .rates-section .section-header p { color: rgba(255, 255, 255, 0.7); }
+        .rates-section .section-badge { background: rgba(37, 99, 235, 0.2); }
+        .rates-table-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+        .rates-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .rates-table th {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent);
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        .rates-table td {
+            padding: 0.85rem 1rem;
+            color: var(--white);
+            text-align: center;
+            font-size: 0.9rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .rates-table tr:last-child td { border-bottom: none; }
+        .rates-table td:nth-child(2),
+        .rates-table td:nth-child(3),
+        .rates-table td:nth-child(4) {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-secondary);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .cta-content h2 {
+            font-size: 1.75rem;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+        .cta-content p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .btn-cta {
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .btn-cta-primary {
+            background: var(--white);
+            color: var(--secondary);
+        }
+        .btn-cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        .btn-cta-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        .btn-cta-secondary:hover {
+            background: var(--white);
+            color: var(--secondary);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--gray-50);
+        }
+        .contact-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        .contact-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 1.3rem;
+        }
+        .contact-card h4 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        .contact-card p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+        .contact-card a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: var(--white);
+            padding: 2.5rem 1rem 1.5rem;
+        }
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-brand .logo-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .footer-brand p {
+            color: var(--gray-400);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+        }
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            background: var(--gray-800);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.1rem;
+            transition: all 0.2s;
+        }
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+        .footer-links h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.6rem; }
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: var(--secondary); }
+        .footer-bottom {
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--gray-800);
+            text-align: center;
+        }
+        .footer-bottom p {
+            color: var(--gray-500);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+        .disclaimer {
+            font-size: 0.75rem;
+            color: var(--gray-600);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 85px;
+            right: 15px;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.8rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            transition: all 0.3s;
+            text-decoration: none;
+            animation: pulse-green 2s infinite;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Sticky Bottom Bar */
+        .sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: 0.75rem 1rem;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            gap: 0.75rem;
+        }
+        .sticky-btn {
+            flex: 1;
+            padding: 0.85rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .sticky-btn-call {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        .sticky-btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+        }
+
+        /* Plan Details Tabs */
+        .details-section {
+            background: var(--primary);
+            position: relative;
+        }
+        .details-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.03'%3E%3Cpath d='M50 50c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10c0 5.52-4.48 10-10 10s-10-4.48-10-10 4.48-10 10-10zM10 10c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10c0 5.52-4.48 10-10 10S0 25.52 0 20s4.48-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .details-section .section-header h2 { color: var(--white); }
+        .details-section .section-header p { color: rgba(255, 255, 255, 0.7); }
+        .details-section .section-badge { background: rgba(37, 99, 235, 0.2); }
+        .details-tabs {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .tabs-nav {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            scrollbar-width: none;
+        }
+        .tabs-nav::-webkit-scrollbar { display: none; }
+        .tab-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .tab-btn.active {
+            background: var(--secondary);
+            border-color: var(--secondary);
+        }
+        .tab-btn:hover:not(.active) { background: rgba(255, 255, 255, 0.12); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .detail-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 1.5rem;
+        }
+        .detail-header {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .detail-info h3 {
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+        .detail-type {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 0.3rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        .detail-info p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .rate-card {
+            background: rgba(37, 99, 235, 0.15);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .rate-card h4 {
+            color: var(--accent);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        .rate-card-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
+        .rate-card-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+        .tenure-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .tenure-option {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .tenure-option.active {
+            border-color: var(--accent);
+            background: rgba(245, 158, 11, 0.1);
+        }
+        .tenure-years {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+        .tenure-label {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.7rem;
+        }
+        .tenure-rate {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+        .example-table-section { margin-top: 1.5rem; }
+        .example-table-section h4 {
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .example-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        .example-table th {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent);
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+        }
+        .example-table td {
+            padding: 0.75rem 0.5rem;
+            color: var(--white);
+            text-align: center;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .example-table tr:last-child td { border-bottom: none; }
+        .example-table td:nth-child(2),
+        .example-table td:nth-child(4),
+        .example-table td:nth-child(5) {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5); }
+            50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
+        }
+
+        @media (min-width: 640px) {
+            body { padding-bottom: 0; }
+            .hero { padding: 4rem 2rem; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-buttons { flex-direction: row; }
+            .btn-hero { flex: 0 0 auto; max-width: 220px; }
+            .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+            .stat-number { font-size: 1.75rem; }
+            .enquiry-form { max-width: 400px; margin-left: auto; margin-top: 0; }
+
+            .section { padding: 4rem 2rem; }
+            .section-header h2 { font-size: 2rem; }
+
+            .trust-grid { grid-template-columns: repeat(4, 1fr); }
+            .steps-grid { grid-template-columns: repeat(3, 1fr); }
+            .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: repeat(3, 1fr); }
+
+            .plans-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+
+            .detail-card { padding: 2rem; }
+            .detail-header { grid-template-columns: 2fr 1fr; }
+            .tenure-options { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+            .tenure-option { padding: 1.5rem 1rem; }
+            .tenure-years { font-size: 1.75rem; }
+
+            .sticky-bar { display: none; }
+            .floating-whatsapp { bottom: 25px; }
+
+            .cta-content h2 { font-size: 2rem; }
+            .cta-buttons { flex-direction: row; justify-content: center; }
+            .btn-cta { flex: 0 0 auto; max-width: 200px; }
+
+            .footer-content { grid-template-columns: 2fr 1fr 1fr 1fr; }
+            .footer-bottom { display: flex; justify-content: space-between; align-items: center; }
+            .footer-bottom p { margin-bottom: 0; }
+        }
+
+        @media (min-width: 1024px) {
+            .header { padding: 0.75rem 2rem; }
+            .hero { padding: 5rem 2rem; }
+            .hero h1 { font-size: 3rem; }
+            .hero-description { font-size: 1.15rem; max-width: 550px; }
+            .hero-stats { gap: 2rem; margin-top: 2.5rem; }
+
+            .section { padding: 5rem 2rem; }
+            .section-header h2 { font-size: 2.25rem; }
+
+            .plans-grid { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+            .plan-card:hover { transform: translateY(-6px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="trust-item">
+            <i class="bi bi-shield-check"></i>
+            <span>RBI Registered</span>
+        </div>
+        <div class="trust-item">
+            <i class="bi bi-award"></i>
+            <span>Govt. Approved</span>
+        </div>
+        <div class="trust-item">
+            <i class="bi bi-lock"></i>
+            <span>100% Secure</span>
+        </div>
+        <div class="trust-item">
+            <i class="bi bi-clock-history"></i>
+            <span>15+ Years Trust</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <img src="file:///c:/Users/HP/Downloads/logo.png" alt="FLP Nidhi Limited" style="height: 50px; width: auto;">
+            </a>
+            <a href="tel:8527682370" class="nav-btn">
+                <i class="bi bi-telephone"></i>
+                <span>Call Now</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="bi bi-shield-check"></i>
+                RBI Registered Nidhi Company
+            </div>
+            <h1>Secure Your <span>Future Today</span></h1>
+            <p class="hero-description">
+                Trusted deposit schemes with guaranteed returns up to 12.50%. Join 50,000+ families who have secured their financial future with FLP Nidhi Limited.
+            </p>
+            <div class="hero-buttons">
+                <a href="#plans" class="btn-hero btn-hero-primary">
+                    <i class="bi bi-grid-3x3-gap"></i>
+                    View Plans
+                </a>
+                <a href="#enquiry" class="btn-hero btn-hero-secondary">
+                    <i class="bi bi-chat-dots"></i>
+                    Get Free Advice
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Trust</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12.50%</div>
+                    <div class="stat-label">Max Returns</div>
+                </div>
+            </div>
+
+            <!-- Enquiry Form -->
+            <div class="enquiry-form" id="enquiry">
+                <h3><i class="bi bi-chat-dots"></i> Get Free Consultation</h3>
+                <form onsubmit="submitEnquiry(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Enter name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="tel" placeholder="Enter mobile" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full">
+                            <label>Interested Plan</label>
+                            <select required>
+                                <option value="">Select a plan</option>
+                                <option>Bhagya Laxmi - Monthly Deposit</option>
+                                <option>Child Solution Plan</option>
+                                <option>Shopkeeper Plan - Daily Deposit</option>
+                                <option>Freedom Saving Plan</option>
+                                <option>Normal RD Plan</option>
+                                <option>Fixed Deposit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <i class="bi bi-send"></i> Submit Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="section trust-section">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-shield-check"></i> Why Choose Us
+            </div>
+            <h2>Trusted by <span>Thousands</span></h2>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-icon"><i class="bi bi-shield-check"></i></div>
+                <div>
+                    <h4>RBI Registered</h4>
+                    <p>Fully compliant Nidhi Company</p>
+                </div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon"><i class="bi bi-piggy-bank"></i></div>
+                <div>
+                    <h4>High Returns</h4>
+                    <p>Up to 12.50% interest rate</p>
+                </div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon"><i class="bi bi-phone"></i></div>
+                <div>
+                    <h4>Mobile App</h4>
+                    <p>Manage from anywhere</p>
+                </div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon"><i class="bi bi-headset"></i></div>
+                <div>
+                    <h4>24/7 Support</h4>
+                    <p>Always here to help you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section how-it-works">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-lightning"></i> Simple Process
+            </div>
+            <h2>How It <span>Works</span></h2>
+            <p>Start investing in just 3 simple steps</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h4>Choose Your Plan</h4>
+                <p>Select the deposit plan that suits your financial goals and tenure preference.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h4>Submit Documents</h4>
+                <p>Fill simple form with KYC documents - Aadhaar, PAN, Photo, and Address proof.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h4>Start Earning</h4>
+                <p>Make your first deposit and start earning attractive returns from day one!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="section plans-section" id="plans">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-star-fill"></i> Investment Plans
+            </div>
+            <h2>Choose Your <span>Plan</span></h2>
+            <p>Attractive interest rates with flexible tenures for every financial goal.</p>
+        </div>
+        <div class="plans-grid">
+            <!-- Plan 1: Bhagya Laxmi -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="bi bi-gem"></i></div>
+                    <div class="plan-rate">
+                        <div class="plan-rate-value">11.75%</div>
+                        <div class="plan-rate-label">Up to 12.50%</div>
+                    </div>
+                </div>
+                <h3 class="plan-name">Bhagya Laxmi</h3>
+                <span class="plan-type">Monthly Deposit - RD</span>
+                <div class="plan-tenures">
+                    <span class="tenure-badge">5 Years</span>
+                    <span class="tenure-badge">9 Years</span>
+                    <span class="tenure-badge">12 Years</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="bi bi-check-circle-fill"></i> Age: 0-18 years (Girls Only)</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Monthly Deposit: ₹500/-</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Passbook Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> SMS Alert Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Mobile & Web App</li>
+                </ul>
+                <div class="plan-minimum">
+                    <span class="plan-minimum-label">Minimum Investment</span>
+                    <span class="plan-minimum-value">₹500</span>
+                </div>
+            </div>
+
+            <!-- Plan 2: Child Solution -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="bi bi-emoji-smile"></i></div>
+                    <div class="plan-rate">
+                        <div class="plan-rate-value">11%</div>
+                        <div class="plan-rate-label">Up to 12%</div>
+                    </div>
+                </div>
+                <h3 class="plan-name">Child Solution Plan</h3>
+                <span class="plan-type">Monthly Deposit - RD</span>
+                <div class="plan-tenures">
+                    <span class="tenure-badge">5 Years</span>
+                    <span class="tenure-badge">9 Years</span>
+                    <span class="tenure-badge">12 Years</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="bi bi-check-circle-fill"></i> Age: 0-18 years (All)</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Monthly Deposit: ₹500/-</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Passbook Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> SMS Alert Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Mobile & Web App</li>
+                </ul>
+                <div class="plan-minimum">
+                    <span class="plan-minimum-label">Minimum Investment</span>
+                    <span class="plan-minimum-value">₹500</span>
+                </div>
+            </div>
+
+            <!-- Plan 3: Shopkeeper -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="bi bi-shop"></i></div>
+                    <div class="plan-rate">
+                        <div class="plan-rate-value">9%</div>
+                        <div class="plan-rate-label">Up to 10%</div>
+                    </div>
+                </div>
+                <h3 class="plan-name">Shopkeeper Plan</h3>
+                <span class="plan-type">Daily Deposit</span>
+                <div class="plan-tenures">
+                    <span class="tenure-badge">2 Years</span>
+                    <span class="tenure-badge">3 Years</span>
+                    <span class="tenure-badge">5 Years</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="bi bi-check-circle-fill"></i> Passbook Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> SMS Alert Service</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Mobile & Web App</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Short Time Period</li>
+                </ul>
+                <div class="plan-minimum">
+                    <span class="plan-minimum-label">Minimum Investment</span>
+                    <span class="plan-minimum-value">₹100</span>
+                </div>
+            </div>
+
+            <!-- Plan 4: Freedom Saving -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="bi bi-unlock"></i></div>
+                    <div class="plan-rate">
+                        <div class="plan-rate-value">7%</div>
+                        <div class="plan-rate-label">Per Annum</div>
+                    </div>
+                </div>
+                <h3 class="plan-name">Freedom Saving</h3>
+                <span class="plan-type">Monthly Interest</span>
+                <div class="plan-tenures">
+                    <span class="tenure-badge">1 Year</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="bi bi-check-circle-fill"></i> Interest Credited Monthly</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Passbook Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> SMS Alert Service</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Mobile & Web App</li>
+                </ul>
+                <div class="plan-minimum">
+                    <span class="plan-minimum-label">Minimum Investment</span>
+                    <span class="plan-minimum-value">₹100</span>
+                </div>
+            </div>
+
+            <!-- Plan 5: Normal RD -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="bi bi-wallet2"></i></div>
+                    <div class="plan-rate">
+                        <div class="plan-rate-value">10%</div>
+                        <div class="plan-rate-label">Up to 10.50%</div>
+                    </div>
+                </div>
+                <h3 class="plan-name">Normal RD Plan</h3>
+                <span class="plan-type">Monthly Deposit</span>
+                <div class="plan-tenures">
+                    <span class="tenure-badge">3 Years</span>
+                    <span class="tenure-badge">5 Years</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="bi bi-check-circle-fill"></i> Flexible Term Plan</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Yearly Interest</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Passbook Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Message Alert</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Mobile & Web App</li>
+                </ul>
+                <div class="plan-minimum">
+                    <span class="plan-minimum-label">Minimum Investment</span>
+                    <span class="plan-minimum-value">₹500</span>
+                </div>
+            </div>
+
+            <!-- Plan 6: Fixed Deposit -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="bi bi-bank"></i></div>
+                    <div class="plan-rate">
+                        <div class="plan-rate-value">10%</div>
+                        <div class="plan-rate-label">Up to 11.25%</div>
+                    </div>
+                </div>
+                <h3 class="plan-name">Fixed Deposit</h3>
+                <span class="plan-type">One Time Investment</span>
+                <div class="plan-tenures">
+                    <span class="tenure-badge">1 Yr</span>
+                    <span class="tenure-badge">2 Yrs</span>
+                    <span class="tenure-badge">3 Yrs</span>
+                    <span class="tenure-badge">5 Yrs</span>
+                    <span class="tenure-badge">6.6 Yrs</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="bi bi-check-circle-fill"></i> One Time Investment</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Higher Interest by Term</li>
+                    <li><i class="bi bi-check-circle-fill"></i> FD Bond Facility</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Quick Services</li>
+                    <li><i class="bi bi-check-circle-fill"></i> WhatsApp Support</li>
+                </ul>
+                <div class="plan-minimum">
+                    <span class="plan-minimum-label">Minimum Investment</span>
+                    <span class="plan-minimum-value">₹5,000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interest Rates Table -->
+    <section class="section rates-section" id="rates">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-graph-up"></i> Interest Rates
+            </div>
+            <h2>Our Best <span>Rates</span></h2>
+            <p>Compare interest rates across all deposit plans</p>
+        </div>
+        <div class="rates-table-wrapper">
+            <table class="rates-table">
+                <thead>
+                    <tr>
+                        <th>Plan Name</th>
+                        <th>1 Year</th>
+                        <th>3 Years</th>
+                        <th>5+ Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Bhagya Laxmi (RD)</td><td>-</td><td>-</td><td>11.75% - 12.50%</td></tr>
+                    <tr><td>Child Solution (RD)</td><td>-</td><td>-</td><td>11.00% - 12.00%</td></tr>
+                    <tr><td>Shopkeeper (Daily)</td><td>9.00%</td><td>9.50%</td><td>10.00%</td></tr>
+                    <tr><td>Freedom Saving</td><td>7.00%</td><td>-</td><td>-</td></tr>
+                    <tr><td>Normal RD</td><td>-</td><td>10.00%</td><td>10.50%</td></tr>
+                    <tr><td>Fixed Deposit</td><td>10.00%</td><td>10.75%</td><td>11.00% - 11.25%</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-chat-quote"></i> Testimonials
+            </div>
+            <h2>What Our <span>Customers</span> Say</h2>
+            <p>Real experiences from our satisfied members</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">R</div>
+                    <div class="testimonial-info">
+                        <h4>Ramesh Kumar</h4>
+                        <p>Business Owner, Delhi</p>
+                    </div>
+                </div>
+                <div class="testimonial-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">"I started with ₹500 monthly in Bhagya Laxmi for my daughter's future. Now after 9 years, I've accumulated a substantial amount. The returns are excellent and the service is very helpful."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">S</div>
+                    <div class="testimonial-info">
+                        <h4>Sunita Devi</h4>
+                        <p>Homemaker, Mumbai</p>
+                    </div>
+                </div>
+                <div class="testimonial-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">"The Fixed Deposit option with 11.25% interest is amazing! I've been investing for 3 years now and the returns have been consistent. Highly recommend FLP Nidhi to everyone."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">A</div>
+                    <div class="testimonial-info">
+                        <h4>Anil Patel</h4>
+                        <p>Shopkeeper, Ahmedabad</p>
+                    </div>
+                </div>
+                <div class="testimonial-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">"The Shopkeeper Daily Deposit plan is perfect for my business. I save ₹100 daily and it's helped me build my emergency fund. The mobile app makes tracking very easy."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">M</div>
+                    <div class="testimonial-info">
+                        <h4>Meena Gupta</h4>
+                        <p>Teacher, Jaipur</p>
+                    </div>
+                </div>
+                <div class="testimonial-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-text">"Started the Child Solution plan for my son 5 years ago. The interest rates are better than banks and the staff is very supportive. Got my passbook and all details on mobile instantly."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-question-circle"></i> FAQ
+            </div>
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <p>Find answers to common queries about our deposit schemes</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    What is a Nidhi Company?
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>A Nidhi Company is a type of Indian financial entity that is registered under the Companies Act and operates under the Nidhi Rules. It is authorized to borrow money from its members (who are also shareholders) and lend to members only. Nidhi companies are regulated by the Ministry of Corporate Affairs (MCA) and RBI guidelines.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Is my deposit safe with FLP Nidhi?
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, FLP Nidhi Limited is a registered Nidhi Company operating under the Companies Act. We follow all RBI and MCA guidelines for Nidhi Companies. Your deposits are secured with our company, and we have a track record of 15+ years of safe and timely returns.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    What documents are required to open an account?
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>You need: 1) Aadhaar Card (KYC) 2) PAN Card 3) Passport Size Photo 4) Address Proof (if different from Aadhaar) 5) Mobile Number linked to Aadhaar. The process is simple and can be completed within 15-30 minutes.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    When will I receive my maturity amount?
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Your maturity amount will be credited to your account within 30 days from the maturity date. For recurring deposits, you can also opt for auto-renewal or credit to your savings account linked with the deposit.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Can I withdraw my deposit before maturity?
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, premature withdrawal is allowed. The interest rate applicable will be 1-2% lower than the contracted rate for the period the deposit remained with us. Please contact our office for detailed withdrawal process and applicable terms.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    How can I make my monthly/daily deposits?
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>You can make deposits through: 1) Cash at our office 2) UPI/Online Transfer to our account 3) Cheque deposit 4) Through our Mobile App 5) Standing instruction from your bank account. You'll receive instant confirmation via SMS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="bi bi-telephone"></i> Contact Us
+            </div>
+            <h2>Get In <span>Touch</span></h2>
+            <p>We're here to help you with any queries</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                <div>
+                    <h4>Call Us</h4>
+                    <p><a href="tel:8527682370">+91 98765 43210</a></p>
+                    <p>Mon-Sat: 9:30 AM - 6:00 PM</p>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                    <h4>WhatsApp</h4>
+                    <p><a href="https://wa.me/918527682370">+91 98765 43210</a></p>
+                    <p>Quick response guaranteed</p>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                <div>
+                    <h4>Email</h4>
+                    <p><a href="mailto:info@flpnidhi.com">info@flpnidhi.com</a></p>
+                    <p>We reply within 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Start Your Investment Today</h2>
+            <p>Contact us to know more about our investment plans and start securing your future.</p>
+            <div class="cta-buttons">
+                <a href="tel:8527682370" class="btn-cta btn-cta-primary">
+                    <i class="bi bi-telephone"></i> Call Now
+                </a>
+                <a href="https://wa.me/918527682370" class="btn-cta btn-cta-secondary">
+                    <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="file:///c:/Users/HP/Downloads/logo.png" alt="FLP Nidhi Limited" style="height: 50px; width: auto;">
+                </a>
+                <p>RBI registered Nidhi Company offering trusted deposit schemes with guaranteed returns.</p>
+                <div class="social-links">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Our Plans</h4>
+                <ul>
+                    <li><a href="#plans">Bhagya Laxmi</a></li>
+                    <li><a href="#plans">Child Solution</a></li>
+                    <li><a href="#plans">Shopkeeper</a></li>
+                    <li><a href="#plans">Fixed Deposit</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:8527682370"><i class="bi bi-telephone"></i> +91 98765 43210</a></li>
+                    <li><a href="mailto:info@flpnidhi.com"><i class="bi bi-envelope"></i> info@flpnidhi.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 FLP Nidhi Limited. All Rights Reserved.</p>
+            <div style="display: flex; gap: 1.5rem;">
+                <a href="#" style="color: var(--gray-500); text-decoration: none; font-size: 0.85rem;">Privacy Policy</a>
+                <a href="#" style="color: var(--gray-500); text-decoration: none; font-size: 0.85rem;">Terms of Service</a>
+            </div>
+        </div>
+        <p class="disclaimer">
+            <strong>Disclaimer:</strong> Returns mentioned on this website are indicative and based on current interest rates.
+            Actual returns may vary. FLP Nidhi Limited is a registered Nidhi Company under the Companies Act, 2013.
+            Please read the terms and conditions carefully before investing. Investment in Nidhi Companies involves risk.
+            Please invest wisely.
+        </p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918527682370" class="floating-whatsapp" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Bottom Bar (Mobile) -->
+    <div class="sticky-bar">
+        <a href="tel:8527682370" class="sticky-btn sticky-btn-call">
+            <i class="bi bi-telephone"></i> Call
+        </a>
+        <a href="https://wa.me/918527682370" class="sticky-btn sticky-btn-whatsapp">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+
+    <script>
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const faqItem = button.closest('.faq-item');
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked if wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Enquiry Form Submit
+        function submitEnquiry(event) {
+            event.preventDefault();
+            const form = event.target;
+            const submitBtn = form.querySelector('.form-submit');
+            const originalText = submitBtn.innerHTML;
+
+            submitBtn.innerHTML = '<i class="bi bi-check-circle"></i> Submitted!';
+            submitBtn.style.background = '#10b981';
+
+            setTimeout(() => {
+                alert('Thank you for your enquiry! Our team will contact you shortly.');
+                form.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = '';
+            }, 1000);
+        }
+
+        // Tabs functionality
+        function openTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.closest('.tab-btn').classList.add('active');
+        }
+    </script>
+</body>
+</html>
